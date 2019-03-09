@@ -4,7 +4,7 @@
     <view class='info-box'>
       <!-- <text class='title'>{{detailData.Name}}</text> -->
       <rich-text nodes="{{detailData.Name}}" bindtap="tap" class='title'></rich-text>
-      <view class='price-box' wx:if="{{selectPrice}}">
+      <view class='price-box' a:if="{{selectPrice}}">
         <text class='unit'>￥</text>
         <text class='price'>{{selectPrice/100}}</text>
       </view>
@@ -13,9 +13,9 @@
   <view class='size-wp'>
     <text class='title'>请选择您要试穿的尺码</text>
     <view class='size-box'>
-      <block wx:for="{{detailData.sku_list[0].Sizes}}">
-       <button class='box {{selectSku==item.SkuCode?"on":""}}'  data-price="{{item.Price}}"   bindtap='sizeChange' data-sku="{{item.SkuCode}}" data-boxid='{{item.BoxId}}' wx:if="{{item.Status}}">{{item.Size}}</button>
-        <button wx:else class='box disabled' disabled='true'>{{item.Size}}</button>
+      <block a:for="{{detailData.sku_list[0].Sizes}}">
+       <button class='box {{selectSku==item.SkuCode?"on":""}}'  data-price="{{item.Price}}"   bindtap='sizeChange' data-sku="{{item.SkuCode}}" data-boxid='{{item.BoxId}}' a:if="{{item.Status}}">{{item.Size}}</button>
+        <button a:else class='box disabled' disabled='true'>{{item.Size}}</button>
       </block>
     </view>
   </view>

@@ -1,9 +1,9 @@
 <!--按钮  -->
-<view class='scan-btn-wp' bindtap='scanCode' wx:if="{{maxNum<num}}">
+<view class='scan-btn-wp' bindtap='scanCode' a:if="{{maxNum<num}}">
   <button class="scan-btn">扫一扫<image src='../../images/icon-scan.svg' class='icon'></image>去试鞋</button>
 </view>
 <view class='try-list-wp'>
-  <view class='try-list-cell' wx:for="{{tryList}}"> 
+  <view class='try-list-cell' a:for="{{tryList}}"> 
     <text class='title'>{{item.Name}}</text>
     <view class='cell-icon-box' bindtap='changeImgTips' data-index='{{index}}'>
       <image src='../../images/icon-cell-access.svg'  class='cell-icon {{index==selectIndex?"on":""}}'  ></image>
@@ -13,16 +13,16 @@
       <text class='tx'>时间：{{item.created_at}}</text>
       <text class='tx'>展柜：{{item.CabinetName}}</text>
       <text class='tx'>展位：{{item.FrameName}}-{{item.Size}}码</text>
-      <view class='status' wx:if="{{item.Status==1}}">
+      <view class='status' a:if="{{item.Status==1}}">
         <text class='dot'></text>
         <text class='s-tx'>正在试穿</text>
       </view>
-      <view class='status off' wx:else>
+      <view class='status off' a:else>
         <image src='../../images/icon-check.svg' class='ck-icon'></image>
         <text class='s-tx'>已归还</text>
       </view>
     </view>
-    <view class='imgbox' wx:if="{{index==selectIndex}}">
+    <view class='imgbox' a:if="{{index==selectIndex}}">
       <image class='img' src='{{item.tips_url}}' mode='aspectFit'></image>
     </view>
   </view>

@@ -2,7 +2,7 @@
   <image class='img' src='../../images/icon-success.svg'></image>
   <text class='tx'>您可以继续试用或加入购物车</text>
 </view>
-<view class='try-list-cell' wx:for="{{tryList}}">
+<view class='try-list-cell' a:for="{{tryList}}">
   <text class='title'>{{item.Name}}</text>
   <view class='info-box'>
     <text class='tx'>时间：{{item.created_at}}</text>

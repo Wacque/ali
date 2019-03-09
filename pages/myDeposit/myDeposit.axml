@@ -7,9 +7,9 @@
       <text class='price'>{{price/100}}</text>
     </view>
   </view>
-  <button class='g-btn'  open-type="getUserInfo" bindgetuserinfo="recharge"  wx:if="{{price==0}}">充值押金</button>
-  <button class='g-btn' wx:else bindtap='refundCom'>退押金</button>
-  <view wx:if="{{price==0&&deposit!=0}}" class='deposit-box'>
+  <button class='g-btn'  open-type="getUserInfo" bindgetuserinfo="recharge"  a:if="{{price==0}}">充值押金</button>
+  <button class='g-btn' a:else bindtap='refundCom'>退押金</button>
+  <view a:if="{{price==0&&deposit!=0}}" class='deposit-box'>
     <text class='tx'>需充值{{deposit/100}}元进行试穿</text>
   </view>
 </view>
