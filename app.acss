@@ -1,0 +1,103 @@
+/**app.acss**/
+page{
+  background-color: #f6f6f6;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.icon-cell{
+  width: 16rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 30rpx;
+  top: 32rpx;
+}
+.step-box{
+  display: flex;
+  flex-direction: row;
+}
+.step-box .minus,
+.step-box .add{
+  width: 56rpx;
+  height: 56rpx;
+  /* display: inline-block; */
+  justify-content: center;
+  background: #000;
+  display: flex;
+  line-height: 56rpx;
+  font-size: 36rpx;
+  color: #E3E3E3;
+  border-radius: 12rpx 0 0 12rpx;
+}
+.step-box .minus.off,
+.step-box .add.off{
+  background-color: #F2F2F2
+}
+.step-box .add{
+  border-radius: 0 12rpx 12rpx 0;
+}
+.step-box .input{
+  width: 96rpx;
+  height: 56rpx;
+  background-color: #f2f2f2;
+  line-height: 56rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #000000;
+}
+.g-btn{
+  background: #020202;
+  border-radius: 4px;
+  margin: 60rpx auto 0;
+  font-size: 34rpx;
+  line-height: 88rpx;
+  color: #F0DFB4;
+  height: 88rpx;
+  width: 680rpx;
+}
+.wapper{
+  width: 100%;
+}
+
+
+.emp-cell{
+  width: 100%;
+  display: flex;
+  height: 88rpx;
+  justify-content: center;
+  align-items: center
+}
+.emp-cell .tx{
+  font-size: 28rpx;
+  color: #d8d8d8;
+}
+.loading{
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.loading-icon{
+  width: 40rpx;
+  height: 40rpx;
+  animation: loadingFn 1s infinite linear;
+  
+}
+.loading-tx{
+  font-size: 28rpx;
+  color: #343339;
+  margin-left: 20rpx;
+}
+@keyframes loadingFn
+{
+  0%{ transform: rotate(0deg) }  
+  100% { transform: rotate(360deg) }
+
+}

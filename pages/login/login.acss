@@ -1,0 +1,57 @@
+page{
+  background: #fff;
+}
+.login-wapper{
+  padding: 0 60rpx;
+}
+.logo-box{
+  display: flex;
+  padding-top: 60rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+.logo{
+  width: 150rpx;
+  height: 150rpx;
+  display: block
+}
+.logo-tx{
+  font-size: 26rpx;
+  margin-top: 20rpx;
+  color: #000;
+}
+.auth-info{
+  padding: 28rpx 0 40rpx;
+  border-bottom: 1rpx solid #ddd;  
+  display: flex;
+  flex-direction: column;
+}
+.auth-info .t{
+  font-size: 32rpx;
+  color: #000;
+}
+.auth-info .cell{
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.auth-info .cell .icon{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+}
+.auth-info .cell .tx{
+  font-size: 26rpx;
+  color: #666;
+}
+.login-btn{
+  height: 94rpx;
+  background: #1AAD19;
+  border-radius: 5px;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  margin-top: 60rpx;
+}

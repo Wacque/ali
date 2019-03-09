@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="18px" viewBox="0 0 13 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="用户端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="17-地址管理" transform="translate(-15.000000, -77.000000)" fill-rule="nonzero" fill="#BBBBBB">
+            <g id="control" transform="translate(0.000000, 64.000000)">
+                <path d="M21.2995454,22 C19.8343476,22 18.6831208,20.8508929 18.6831208,19.3883929 C18.6831208,17.9258929 19.8343476,16.7767857 21.2995454,16.7767857 C22.7647431,16.7767857 23.91597,17.9258929 23.91597,19.3883929 C23.91597,20.8508929 22.7647431,22 21.2995454,22 Z M21.3096085,13 C17.7935364,13 15,15.7904018 15,19.3 C15,23.9808036 21.3096085,31 21.3096085,31 C21.3096085,31 27.6192171,23.9808036 27.6192171,19.3 C27.6192171,15.7904018 24.8256807,13 21.3096085,13 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

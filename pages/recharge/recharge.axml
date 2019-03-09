@@ -1,0 +1,22 @@
+<view>
+  <view class='bg'></view>
+  <view class='recharge-tips'>
+    <text class='title'>试穿前需充值押金</text>
+    <text class='tx'>还鞋后，可在“个人中心→我的押金”中退还。</text>
+    <text class='tx'>申请退还后，押金金额将<text class='strong'>原路返还，即时到账</text></text>
+  </view>
+  <view class='deposit-wp'>
+    <view class='price-box'>
+      <text class='unit'>￥</text>
+      <text class='price'>{{price/100}}</text>
+    </view>
+    <text class='tips'>押金</text>    
+  </view>
+  <view class='pay-cell'>
+    <image class='img' src='../../images/icon-wxpay.svg'></image>
+    <text class='tx'>微信支付</text>
+    <image class='ck' src='../../images/icon-address-as-default.svg'></image>
+  </view>
+  <button class='g-btn' bindtap='pay'>确认充值</button>
+
+</view>

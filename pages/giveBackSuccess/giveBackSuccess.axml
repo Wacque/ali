@@ -1,0 +1,26 @@
+<view class='try-info'>
+  <image class='img' src='../../images/icon-success.svg'></image>
+  <text class='tx'>您可以继续试用或加入购物车</text>
+</view>
+<view class='try-list-cell' wx:for="{{tryList}}">
+  <text class='title'>{{item.Name}}</text>
+  <view class='info-box'>
+    <text class='tx'>时间：{{item.created_at}}</text>
+    <text class='tx'>展柜：{{item.CabinetName}}</text>
+    <text class='tx'>展位：{{item.FrameName}}-{{item.Size}}码</text>
+    <view class='status off'>
+      <image src='../../images/icon-check.svg' class='ck-icon'></image>
+      <text class='s-tx'>已归还</text>
+    </view>
+  </view>
+  <view class='btn-box'>
+    <text class='price'>￥{{item.Price/100}}</text>
+    <view class="btn-wp">
+       <navigator target="miniProgram" class='btn btn2' open-type="navigate" app-id="wx999a0d532ea792fd" path="pages/goods/detail/index?alias={{item.YouzanId}}" extra-data="" version="release">买下TA</navigator>
+      <button class='btn' data-id='{{item.FrameId}}' bindtap='routerDetail'>试穿其他尺码</button>
+    </view>
+  </view>
+</view>
+
+<button class='g-btn' bindtap='scanCode'>试穿其他款式</button>
+ <text class='back-tips' bindtap='routerDeposit'>如果您不想再试穿，请<text  class='dep'>点此退还押金</text></text>

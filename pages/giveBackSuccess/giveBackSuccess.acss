@@ -1,0 +1,128 @@
+.try-info{
+  display: flex;
+  padding: 40rpx 0 30rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.try-info .img{
+  width: 96rpx;
+  height: 96rpx;
+}
+.try-info .tx{
+  font-size: 32rpx;
+  color: #000000;
+  line-height: 72rpx;
+  /* margin-top: 40rpx; */
+}
+.try-list-cell{
+  background:rgba(255,255,255,1);
+  border-top:1rpx solid rgba(0,0,0,0.2);
+  border-bottom:1rpx solid rgba(0,0,0,0.2);
+  margin-top:20rpx; 
+  padding: 30rpx 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  position: relative
+}
+.try-list-cell .title{
+  max-height:80rpx;
+  font-size:28rpx;
+  /* margin-top: 30rpx; */
+  line-height:40rpx;
+  padding-right: 50rpx;
+  /* position: relative */
+  /* display: block */
+}
+.try-list-cell .info-box{
+  margin-top: 18rpx;
+  /* padding-bottom: 30rpx; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.try-list-cell .info-box .tx{
+  font-size:24rpx;
+  color: #666;
+  line-height: 36rpx;
+}
+.try-list-cell .info-box .status{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 44rpx;
+  background-color: #020202;
+  padding: 0 14rpx;
+  display: flex;
+  border-radius:22rpx;
+  align-items: center;
+}
+.try-list-cell .info-box .off{
+  background-color: #F2F0E9;
+}
+.try-list-cell .info-box .off .s-tx{
+  color: #999;
+}
+.try-list-cell .info-box .s-tx{
+  color: #fff;
+  font-size: 24rpx;
+}
+.ck-icon{
+  width: 22rpx;
+  height: 16rpx;
+  margin-right: 6rpx;
+}
+.try-list-cell .btn-box{
+  margin-top: 30rpx;
+  height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #D8D8D8
+}
+.try-list-cell .btn-box .price{
+  font-size: 32rpx;
+  color:#D92926;
+}
+.try-list-cell .btn-box .btn,
+.try-list-cell .btn-box .btn2{
+  background: #F1E2BA;
+  /* width:160rpx; */
+  padding: 0 20rpx;
+  height:56rpx;
+  line-height: 56rpx;
+  font-size:26rpx;
+  color: #020202;
+  margin: 0;
+  text-align: center;
+  border-radius: 8rpx;  
+}
+.try-list-cell .btn-wp{
+  display: flex;
+}
+.try-list-cell .btn-box .btn2{
+  background-color: #020202;
+  color: #F0DFB4;
+  margin-right: 30rpx;
+}
+.try-list-cell .btn-box .btn::after{
+  border:none
+}
+.try-list-cell .btn-box .btn::before{
+  border:none
+}
+.g-btn{
+  margin-top: 30rpx;
+}
+.back-tips{
+  font-size:26rpx;
+  color:#666;
+  display: block;
+  margin-top: 40rpx;
+  text-align: center;
+  line-height:66rpx;
+}
+.back-tips .dep{
+  color: #000;
+  text-decoration: underline;
+}

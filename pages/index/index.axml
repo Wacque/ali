@@ -1,0 +1,54 @@
+<view class="app-wp">
+  <view class='cont-bg'></view>
+  <!--占位字符  -->
+  <view class='header-tx'>
+    <image src='../../images/slogen.gif' class='slogen' mode='aspectFit'></image>
+  </view>
+  <!-- 轮播图 -->
+  <view class='swiper-cont'>
+    <swiper class='swiper' indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{banners}}">
+        <swiper-item >
+          <view class='slide-item'>
+            <image src="{{item.images_url}}" mode='aspectFit'  class="slide-image" />
+          </view>
+          
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--按钮  -->
+  <view class='scan-btn-wp' bindtap='scanCode'>
+    <button class="scan-btn">扫一扫<image src='../../images/icon-scan.svg' class='icon'></image>去试鞋</button>
+    
+  </view>
+  <view class='try-list-wp'>
+    <view class='title-box'>
+      <text class='t'>试穿记录</text>
+      <button class='btn' bindtap='routerDeposit' >我的押金<image src='../../images/icon-arrow-gold.svg' class='icon'></image></button>
+    </view>
+    <block wx:if="{{tryList.length>0}}">
+      <view class='try-list-cell' wx:for="{{tryList}}">
+        <text class='title'>{{item.Name}}</text>
+        <view class='info-box'>
+          <text class='tx'>时间：{{item.created_at}}</text>
+          <text class='tx'>展柜：{{item.CabinetName}}</text>
+          <text class='tx'>展位：{{item.FrameName}}-{{item.Size}}码</text>
+        </view>
+        <view class='btn-box'>
+          <text class='price'>￥{{item.Price/100}}</text>
+          <navigator target="miniProgram" class='btn' open-type="navigate" app-id="wx999a0d532ea792fd" path="pages/goods/detail/index?alias={{item.YouzanId}}" extra-data="" version="release">去购买</navigator>
+          <!-- <button class='btn' bindtap='goBuy'></button> -->
+        </view>
+      </view>
+    </block>
+    <view class='emp-cell' wx:elif="{{!isloadList}}">
+      <text class='tx'>您的试穿记录为空~</text>
+    </view>
+  </view>
+  <view class='loading'  wx:if="{{isloadList}}">
+      <image src="../../images/icon-loading.svg" class="loading-icon" />
+      <text class='loading-tx'>正在载入...</text>
+  </view>
+</view>

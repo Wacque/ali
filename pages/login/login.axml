@@ -1,0 +1,18 @@
+<view class='login-wapper'>
+  <view class='logo-box'>
+    <image src='../../images/logo.png' class='logo'></image>
+    <text class='logo-tx'>匚向</text>
+  </view>
+  <view class='auth-info'>
+    <text class='t'>小程序匚向智能试鞋申请获得以下权限：</text>
+    <view class='cell'>
+      <image src='../../images/icon-address-as-default.svg' class='icon'></image>
+      <text class='tx'>获得您的公开信息（头像、昵称等）</text>
+    </view>
+    <view class='cell'>
+      <image src='../../images/icon-address-as-default.svg' class='icon'></image>
+      <text class='tx'>获得您的位置信息</text>
+    </view>
+  </view>
+  <button class='login-btn' open-type="getUserInfo" bindgetuserinfo="getUserInfoAuthKey">登录</button>
+</view>

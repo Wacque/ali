@@ -1,0 +1,151 @@
+.app-wp{
+  position: relative;
+}
+.header-tx{
+  height: 48rpx;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+}
+.slogen{
+  height: 26rpx;
+}
+.cont-bg {
+  background-color:#020202;
+  width:100%;
+  height:200rpx;
+  position:absolute;
+  left:0;
+  top:0;
+}
+.swiper-cont{
+  height: 360rpx;
+  padding: 0rpx 30rpx;
+  position: relative;
+  z-index: 2
+}
+.swiper{
+  width: 690rpx;
+  height: 420rpx;
+  
+
+}
+.slide-item{
+  width: 690rpx;
+  height: 360rpx;
+  background: #F0DFB4;
+  border-radius: 10rpx;  
+}
+.slide-image{
+  border-radius: 10rpx;  
+  width: 690rpx;
+  height: 360rpx;
+}
+.scan-btn-wp{
+  padding-top: 70rpx;
+}
+.scan-btn{
+  height: 88rpx;
+  background-color: #020202;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0DFB4;
+  font-size: 34rpx;
+  width: 690rpx;
+  margin-top: 0rpx auto 0;
+}
+.scan-btn-wp .icon{
+  width: 48rpx;
+  height: 48rpx;
+  margin: 0 20rpx;
+}
+.try-list-wp{
+  padding-top: 40rpx;
+}
+.try-list-wp .title-box{
+  height: 76rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+}
+.try-list-wp .title-box .t{
+  font-size: 32rpx;
+  color: #1E1E19;
+}
+.try-list-wp .title-box .btn{
+  padding: 0 18rpx;
+  height: 52rpx;
+  display: flex;
+  align-items: center;
+  background: #020202;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+  color: #F1E2BB;
+  margin: 0;
+}
+.try-list-wp .title-box .icon{
+  width: 10rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+
+.try-list-cell{
+  background:rgba(255,255,255,1);
+  border-top:1rpx solid rgba(0,0,0,0.2);
+  border-bottom:1rpx solid rgba(0,0,0,0.2);
+  margin-bottom:20rpx; 
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.try-list-cell .title{
+  max-height:80rpx;
+  font-size:28rpx;
+  margin-top: 30rpx;
+  line-height:40rpx;
+  /* display: block */
+}
+.try-list-cell .info-box{
+  margin-top: 18rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.try-list-cell .info-box .tx{
+  font-size:24rpx;
+  color: #666;
+  line-height: 36rpx;
+}
+.try-list-cell .btn-box{
+  height: 96rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1rpx solid #D8D8D8
+}
+.try-list-cell .btn-box .price{
+  font-size: 32rpx;
+  color:#D92926;
+}
+.try-list-cell .btn-box .btn{
+  background: #F1E2BA;
+  width:160rpx;
+  height:56rpx;
+  line-height: 56rpx;
+  font-size:26rpx;
+  color: #020202;
+  margin: 0;
+  text-align: center;
+  border-radius: 8rpx;  
+}
+.try-list-cell .btn-box .btn::after{
+  border-color: #F1E2BA
+}
+.try-list-cell .btn-box .btn::before{
+  border-color: #F1E2BA
+}

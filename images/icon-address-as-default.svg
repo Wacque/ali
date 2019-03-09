@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="用户端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="17-地址管理" transform="translate(-15.000000, -217.000000)" fill="#1AAD19">
+            <g id="address-item" transform="translate(0.000000, 118.000000)">
+                <path d="M23.1492,112.029 C22.9248,112.2528 22.5612,112.2528 22.3368,112.029 C22.3278,112.02 22.3314,112.0062 22.3242,111.9972 C22.3188,111.9918 22.3116,111.9942 22.3056,111.99 L19.9734,109.6566 C19.7298,109.413 19.7298,109.0182 19.9734,108.7734 C20.217,108.5298 20.6118,108.5298 20.8566,108.7734 L22.818,110.736 L28.4148,105.138 C28.6398,104.913 29.0034,104.913 29.2278,105.138 C29.4522,105.3618 29.4522,105.726 29.2278,105.9504 L23.1492,112.029 Z M24,116.9994 C19.029,116.9994 15,112.9704 15,108 C15,103.0296 19.029,99 24,99 C28.9704,99 33,103.0296 33,108 C33,112.9704 28.9704,116.9994 24,116.9994 L24,116.9994 Z" id="ic_checked"></path>
+            </g>
+        </g>
+    </g>
+</svg>

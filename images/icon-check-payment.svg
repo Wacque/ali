@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="用户端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03-支付订单" transform="translate(-342.000000, -643.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="payment" transform="translate(0.000000, 576.000000)">
+                <g id="wx-pay" transform="translate(15.000000, 50.000000)">
+                    <g id="对勾" transform="translate(327.000000, 17.000000)">
+                        <path d="M17.541,0 C12.069,3.36226428 8.1,7.60791166 6.309,9.73524241 L1.935,6.30086522 L0,7.86030683 L7.551,15.5583596 C8.847,12.2231377 12.969,5.70593374 18,1.07267949 L17.541,0 L17.541,0 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

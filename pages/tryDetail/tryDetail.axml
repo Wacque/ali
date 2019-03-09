@@ -1,0 +1,42 @@
+<!--按钮  -->
+<view class='scan-btn-wp' bindtap='scanCode' wx:if="{{maxNum<num}}">
+  <button class="scan-btn">扫一扫<image src='../../images/icon-scan.svg' class='icon'></image>去试鞋</button>
+</view>
+<view class='try-list-wp'>
+  <view class='try-list-cell' wx:for="{{tryList}}"> 
+    <text class='title'>{{item.Name}}</text>
+    <view class='cell-icon-box' bindtap='changeImgTips' data-index='{{index}}'>
+      <image src='../../images/icon-cell-access.svg'  class='cell-icon {{index==selectIndex?"on":""}}'  ></image>
+      
+    </view>
+    <view class='info-box'>
+      <text class='tx'>时间：{{item.created_at}}</text>
+      <text class='tx'>展柜：{{item.CabinetName}}</text>
+      <text class='tx'>展位：{{item.FrameName}}-{{item.Size}}码</text>
+      <view class='status' wx:if="{{item.Status==1}}">
+        <text class='dot'></text>
+        <text class='s-tx'>正在试穿</text>
+      </view>
+      <view class='status off' wx:else>
+        <image src='../../images/icon-check.svg' class='ck-icon'></image>
+        <text class='s-tx'>已归还</text>
+      </view>
+    </view>
+    <view class='imgbox' wx:if="{{index==selectIndex}}">
+      <image class='img' src='{{item.tips_url}}' mode='aspectFit'></image>
+    </view>
+  </view>
+  
+  <view class='try-info'>
+
+
+
+    <text class='title'>如何试穿</text>
+
+    <text class='tx'>1、抽屉打开后，请取出鞋，抽屉不用关闭</text>
+    <text class='tx'>2、试穿完成后请把鞋放回到刚才的抽屉中，并关闭抽屉，归还成功后本页面会有提示。</text>
+    <text class='tx'>3、如果抽屉再次弹开，请重新摆放一下鞋，并再次关闭。</text>
+    <text class='tx'>4、如果抽屉反复弹开，请联系现场工作人员或</text>
+    <button class='btn' open-type='contact'><image class='icon' src='../../images/icon-contact.svg'></image>点此联系客服</button>
+  </view>
+</view>

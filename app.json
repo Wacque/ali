@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",   
+    "pages/myDeposit/myDeposit",
+    "pages/recharge/recharge",
+    "pages/shopDetail/shopDetail",
+    "pages/tryDetail/tryDetail",
+    "pages/login/login",
+    "pages/giveBackSuccess/giveBackSuccess"
+  ],
+  "window": {
+    "defaultTitle": "匚向智能试鞋",
+    "backgroundColor": "#f6f6f6",
+    "titleBarColor": "#020202"
+  }
+}

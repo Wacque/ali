@@ -1,0 +1,47 @@
+.bg{
+  width:750rpx;
+  height:90rpx;
+  background:rgba(240,223,180,1);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.deposit-wp{
+  width:690rpx;
+  height:320rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 5rpx 20rpx rgba(0,0,0,0.15);
+  border-radius:6rpx;
+  margin: 10rpx auto 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.deposit-wp .tips{
+  color: #020202;
+  font-size: 26rpx;
+}
+.deposit-wp .price-box{
+  margin-top: 20rpx;
+  display: flex;
+}
+.deposit-wp .price-box .unit{
+  font-size: 36rpx;
+  padding-top: 20rpx;
+}
+.deposit-wp .price-box .price{
+  color: #020202;
+  font-size: 72rpx;
+}
+.deposit-box{
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-content: center
+}
+.deposit-box .tx{
+  font-size: 28rpx;
+  color: #d8d8d8;
+}
